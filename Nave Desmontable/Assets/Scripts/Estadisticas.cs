@@ -23,12 +23,14 @@ public class Estadisticas : MonoBehaviour
             Vida = 0;
             textoVida.text = "0";
             this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
             Destroy(this.gameObject, 1);
         }
         else if(Vida <= 0)
         {
             textoVida.text = "0";
             this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
             Destroy(this.gameObject, 1);
         }
         

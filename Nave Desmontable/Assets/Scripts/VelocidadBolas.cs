@@ -6,7 +6,7 @@ public class VelocidadBolas : MonoBehaviour
 {
     ConstantForce constantForce;
     [HideInInspector]
-    public int fuerza = Random.Range(90, 200);
+    public int fuerza;
 
     private void OnEnable()
     {
