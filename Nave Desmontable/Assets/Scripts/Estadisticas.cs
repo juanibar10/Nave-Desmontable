@@ -7,6 +7,7 @@ public class Estadisticas : MonoBehaviour
 {
     public float Vida;
     public Text textoVida;
+    public Text velocidadImpacto;
     
     private void Update()
     {
@@ -53,5 +54,6 @@ public class Estadisticas : MonoBehaviour
     {
         Destroy(collision.gameObject);
         BajarVida(collision.gameObject.GetComponent<VelocidadBolas>().fuerza);
+        velocidadImpacto.text ="Velocidad impacto :" + collision.gameObject.GetComponent<VelocidadBolas>().fuerza.ToString();
     }
 }
